@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="cssgd.css"/>   
+    </head>
+    <body>
+        <div id="main">
+            <div class="dong">
+                Name: <input class="o" type="text" id="name"/> <h3 id="name1"></h3>
+            </div>
+             <div class="dong">
+                 Email: <input class="o" type="text" id="email"/> <h3 id="email1"></h3>
+            </div>
+             <div class="dong">
+                 Website: <input class="o" type="text" id="website"/> <h3 id="website1"></h3>
+            </div>
+             <div class="dong">
+                 Message: <input class="o1" type="text" id="message"/><h3 id="message1"></h3>
+            </div>
+            <input type="submit" id="submit" value="submit" onclick="submit()"/>
+        </div>
+    </body>
+    <script>
+        function submit(){
+          var d1= document.getElementById("name");  
+          var d2= document.getElementById("email");  
+          var d3= document.getElementById("website");  
+          var d4= document.getElementById("message");
+          if (d1== ''){
+              document.getElementById("name1").innerHTML="nhập tên vào"
+          }
+          else {
+	if (d2== ''){
+              document.getElementById("email1").innerHTML="nhập email vào"
+          }
+          else {
+	if (d3== ''){
+              document.getElementById("website1").innerHTML="nhập website vào"
+          }
+          else {
+	 if (d4== ''){
+              document.getElementById("message1").innerHTML="nhập massage vào"
+          }
+}      
+}         
+}
+        }
+    </script>
+    
+</html>

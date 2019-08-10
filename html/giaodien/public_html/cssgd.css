@@ -1,0 +1,25 @@
+#main{
+    border: #000000 2px solid;
+    background: #99ffff;
+    margin: auto;
+    width: 5000px;
+    height: 5000px;
+}
+.dong{
+    font-size: 30px;
+    height: 50px;
+    width: 1000px;
+}
+.o{
+    width: 500px;
+    height: 30px;
+}
+.o1{
+    width: 500px;
+    height: 90px;
+}
+#submit{
+ margin:  90px;   
+ width: 80px;
+ height: 50px;
+}

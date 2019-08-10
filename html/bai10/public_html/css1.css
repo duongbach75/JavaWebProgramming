@@ -1,0 +1,49 @@
+#main{
+    border: 2px #990033 solid;
+    width: 100%;
+}
+#head{
+    border-left: #990033 solid 2px;
+    float: left;
+    background-color: red;
+    color: #ffffff;
+    width: 90%;
+    
+}
+.right{
+    float: right;
+}
+.left{
+    float: left;
+}
+#head2{
+    background-color: antiquewhite;
+    border: 2px #cc0033 solid;
+    width: 91%;
+    text-align: center;
+    color: #cc0033;
+}
+.groub{
+     float: left;
+     border: 1px solid #990033;
+     width: 50%;
+}
+.groub2{
+    float: left;
+    border: 1px #990033 solid;
+    width: 47%
+}
+.main2{
+    border: 1px #990033 solid;
+}
+.dautien{
+   font-style: oblique;
+   color: #cc0033;
+   padding-right: 5px;
+   font-size: 22px;
+}
+.noidung{
+    font-size: 18px;
+    padding-right: 7px;
+}
+

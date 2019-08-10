@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>calculator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="csscal.css"/>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td colspan="5"><input id="tl" type="text" /></td>
+            </tr>
+            <tr>
+                <td> <input class="nut" type="button" value="7" onclick="tl.value+=this.value"/></td>
+                <td> <input class="nut" type="button" value="8" onclick="tl.value+=this.value"/></td>
+                <td> <input class="nut" type="button" value="9" onclick="tl.value+=this.value"/></td>
+                <td> <input class="nut" type="button" value="/" onclick="tl.value+=this.value"/></td>
+                <td> <input class="nut" type="button" value="<-"onclick="tl.value=tl.value.substr(0,tl.value.length-1)"/></td>
+            </tr>
+             <tr>
+                <td> <input class="nut" type="button" value="4" onclick="tl.value+=this.value"/></td>
+                <td> <input class="nut" type="button" value="5" onclick="tl.value+=this.value"/></td>
+                <td> <input class="nut" type="button" value="6" onclick="tl.value+=this.value"/></td>
+                <td> <input class="nut" type="button" value="*" onclick="tl.value+=this.value"/></td>
+                <td> <input class="nut" type="button" value="c" onclick="tl.value=''"/></td>
+            </tr>
+             <tr>
+                <td> <input class="nut" type="button" value="1" onclick="tl.value+=this.value "/></td>
+                <td> <input class="nut" type="button" value="2" onclick="tl.value+=this.value"/></td>
+                <td> <input class="nut" type="button" value="3" onclick="tl.value+=this.value"/></td>
+                <td> <input class="nut" type="button" value="+" onclick="tl.value+=this.value"/></td>
+                <td rowspan="2" > <input id="bang"class="nut" type="button" value="="onclick="tl.value=eval(tl.value)"/></td>
+            </tr>
+             <tr>
+                 <td colspan="2"> <input id="khong"class="nut" type="button" value="0" onclick="tl.value+=this.value"/></td>
+                <td> <input class="nut" type="button" value="-" onclick="tl.value+=this.value"/></td>
+                <td> <input class="nut" type="button" value="." onclick="tl.value+=this.value"/></td>
+               
+            </tr>
+        </table>
+    </body>
+</html>
