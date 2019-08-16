@@ -22,7 +22,7 @@
         %>
     </head>
     <body>
-        <form action="POST? comand= update" method="login">
+         <form action="/control?comand=update" method="post">
             Họ và tên:<br> <input type="text" name="name" value="<%= st.getName() %>"><br>
             Khoa:<br> <input type="text" name="khoa" value="<%= st.getMajor() %>"><br>
             Lớp:<br> <input type="text" name="class" value=" <%= st.getDob()%>"><br>

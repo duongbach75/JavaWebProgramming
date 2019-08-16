@@ -27,7 +27,7 @@ public class StudentModel {
         List<Student> list = new ArrayList<>();
         while (rs.next()) {
             Student s = new Student();
-            s.setId(rs.getInt("stt"));
+            s.setId(rs.getString("stt"));
             s.setName(rs.getString("name"));
             s.setMajor(rs.getString("khoa"));
             s.setDob(rs.getString("lop"));
@@ -40,6 +40,7 @@ public class StudentModel {
         Connection conn = db.DBconnect();
         String sql = "INSERT INTO `sinhvien`(`stt`, `name`, `khoa`, `lop`) VALUES (?,?,?,?)";
         PreparedStatement pstmt = conn.prepareStatement(sql);
+        pstmt.setString(1,s.getId());
         pstmt.setString(2,s.getName());
         pstmt.setString(3, s.getMajor());
         pstmt.setString(4, s.getDob());
@@ -63,7 +64,7 @@ public class StudentModel {
           PreparedStatement pstm = conn.prepareStatement(sql);
         ResultSet rs = pstm.executeQuery();
         while (rs.next()) {
-            s.setId(rs.getInt("stt"));
+            s.setId(rs.getString("stt"));
             s.setName(rs.getString("name"));
             s.setMajor(rs.getString("khoa"));
             s.setDob(rs.getString("lop"));

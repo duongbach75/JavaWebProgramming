@@ -9,14 +9,39 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Page</title>
     </head>
     <body>
-        <form action="POST? comand=add" method="control">
-            Họ và tên:<br> <input type="text" name="name"><br>
-            Khoa:<br> <input type="text" name="khoa"><br>
-            Lớp:<br> <input type="text" name="class"><br>
-            <input type="submit" value="add" name="comand">
+        <form action="control?comand=add" method="post">
+            <table>
+                <tr>
+                    <td>stt</td>
+                    <td><input type="text" name="stt" />
+                        
+                </tr>
+                <tr>
+                    <td>Ten</td>
+                    <td><input type="text" name="name" />
+                        <input type="text" name="stt" value="889" hidden></td>
+                </tr>
+                 <tr>
+                    <td>Khoa</td>
+                    <td><input type="text" name="khoa" />
+                     </td>
+                </tr>
+                 <tr>
+                    <td>Lop</td>
+                    <td><input type="text" name="lop" />
+                      </td>
+                </tr>
+                <tr>
+                    <td  colspan='2'>
+                        <input type="hidden" value="add" name="comand" >
+                        <input type="submit" value="Add">
+                    </td>
+                </tr>
+                
+         
         </form>
     </body>
 </html>
